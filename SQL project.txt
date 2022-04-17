@@ -1,0 +1,62 @@
+
+
+ USE store;
+ -- SELECT *
+ -- FROM continent;
+/* CREATE Table users(
+ id int primary key,
+ full_name varchar(20),
+ email varchar(20) unique,
+ gender char(1) check(gender='m' or gender='f'),
+ date_of_birth varchar(20),
+ created_at datetime,
+ country_code int,
+ foreign key(country_code) references customer (code)
+ );
+
+ CREATE Table continent(
+ code int primary key,
+ name1 varchar(20) not null unique,
+ continent_name varchar(20) unique
+ );
+
+ CREATE Table orders(
+ id int primary key,
+ user_id int ,
+ status varchar(6) check(status='start'  or status= 'finish'),
+ created_at datetime,
+ foreign key(user_id) references customer (id)
+ );
+
+ CREATE Table products(
+ id int primary key,
+ name1 varchar(10) not null,
+ price int default 0,
+ status varchar(10) check(status='valid'  or status=  'expired') ,
+ created_at datetime
+ );
+
+ CREATE Table orders_products(
+ order_id int,
+ proudct_id int,
+ quantity int default 0 ,
+ primary key (order_id,proudct_id),
+ foreign key (order_id) references orders(id),
+foreign key (proudct_id) references products(id)
+ );*/
+ 
+ 
+ -- insert into continent values ('100','KHALED','asia');
+ -- insert into users values ('100','Khaled','khleadini@gmail.com','m','1997','3','100');
+ -- insert into orders values ('50','7','start',6);
+ -- insert into products values ('123','LG-TV','8','valid','2022-4-15');
+  -- insert into orders_products values ('597','7315','55');
+  
+ -- update continent set name1="Ali" where code="100";
+ 
+ 
+-- delete from products where id='123';
+
+
+
+
